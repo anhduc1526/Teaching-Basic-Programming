@@ -15,7 +15,7 @@ void BFS(int i)
     {
         int u = q.front();
         q.pop();
-        //if(!visit[u]) cout << u << " ";
+     
         visit[u] = true;
 
         for(int v : G[u])
@@ -39,5 +39,4 @@ int main()
 
     for(int i = 1 ; i <= n ; i++)
         if(!visit[i]) BFS(i);
-    //BFS(3);
 }
